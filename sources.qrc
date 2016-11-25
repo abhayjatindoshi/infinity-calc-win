@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>sources/license.txt</file>
+        <file>sources/INT.cpp</file>
+        <file>sources/INT.h</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dashboard</class>
+ <widget class="QMainWindow" name="dashboard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dashboard</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:none;</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="quick_calc">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>20</y>
+      <width>230</width>
+      <height>230</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#quick_calc{
+	border:none;
+	border-image: url(:/graphics/dashboard/images/quick_calc.png);
+}
+#quick_calc:hover{
+	border-image: url(:/graphics/dashboard/images/quick_calc_hover.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="test_func">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>20</y>
+      <width>230</width>
+      <height>230</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#test_func{
+	border:none;
+	border-image: url(:/graphics/dashboard/images/test_func.png);
+}
+#test_func:hover{
+	border-image: url(:/graphics/dashboard/images/test_func_hover.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="source_code">
+    <property name="geometry">
+     <rect>
+      <x>465</x>
+      <y>20</y>
+      <width>230</width>
+      <height>230</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#source_code{
+	border:none;
+	border-image: url(:/graphics/dashboard/images/source_code.png);
+}
+#source_code:hover{
+	border-image: url(:/graphics/dashboard/images/source_code_hover.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bugs_feedback">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>250</y>
+      <width>230</width>
+      <height>230</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#bugs_feedback{
+	border:none;
+	border-image: url(:/graphics/dashboard/images/bugs_feedback.png);
+}
+#bugs_feedback:hover{
+	border-image: url(:/graphics/dashboard/images/bugs_feedback_hover.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="settings">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>250</y>
+      <width>230</width>
+      <height>230</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#settings{
+	border:none;
+	border-image: url(:/graphics/dashboard/images/settings.png);
+}
+#settings:hover{
+	border-image: url(:/graphics/dashboard/images/settings_hover.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="about_me">
+    <property name="geometry">
+     <rect>
+      <x>465</x>
+      <y>250</y>
+      <width>230</width>
+      <height>230</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#about_me{
+	border:none;
+	border-image: url(:/graphics/dashboard/images/about_me.png);
+}
+#about_me:hover{
+	border-image: url(:/graphics/dashboard/images/about_me_hover.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

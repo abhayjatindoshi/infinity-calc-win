@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/">
+        <file>graphics/about_me/images/encryptor-code-logo.png</file>
+        <file>graphics/about_me/images/infinity-logo.png</file>
+        <file>graphics/about_me/images/photo.png</file>
+        <file>graphics/dashboard/images/about_me.png</file>
+        <file>graphics/dashboard/images/about_me_hover.png</file>
+        <file>graphics/dashboard/images/bugs_feedback.png</file>
+        <file>graphics/dashboard/images/bugs_feedback_hover.png</file>
+        <file>graphics/dashboard/images/quick_calc.png</file>
+        <file>graphics/dashboard/images/quick_calc_hover.png</file>
+        <file>graphics/dashboard/images/settings.png</file>
+        <file>graphics/dashboard/images/settings_hover.png</file>
+        <file>graphics/dashboard/images/source_code.png</file>
+        <file>graphics/dashboard/images/source_code_hover.png</file>
+        <file>graphics/dashboard/images/test_func.png</file>
+        <file>graphics/dashboard/images/test_func_hover.png</file>
+        <file>graphics/icon_splash/splash_screen.png</file>
+        <file>graphics/icon_splash/icon.ico</file>
+        <file>graphics/settings/images/save.png</file>
+        <file>graphics/settings/images/save_press.png</file>
+        <file>graphics/source_code/images/file.png</file>
+        <file>graphics/source_code/images/save.png</file>
+        <file>graphics/source_code/images/save_press.png</file>
+        <file>graphics/test_func/images/add.png</file>
+        <file>graphics/test_func/images/add_press.png</file>
+        <file>graphics/test_func/images/divide.png</file>
+        <file>graphics/test_func/images/divide_press.png</file>
+        <file>graphics/test_func/images/mod.png</file>
+        <file>graphics/test_func/images/mod_press.png</file>
+        <file>graphics/test_func/images/multiply.png</file>
+        <file>graphics/test_func/images/multiply_press.png</file>
+        <file>graphics/test_func/images/subtract.png</file>
+        <file>graphics/test_func/images/subtract_press.png</file>
+        <file>graphics/common/back.png</file>
+        <file>graphics/common/background.png</file>
+    </qresource>
+</RCC>

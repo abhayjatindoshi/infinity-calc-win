@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>quick_calc</class>
+ <widget class="QWidget" name="quick_calc">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Quick Calc</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="back">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>74</width>
+     <height>55</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#back{
+border-image: url(:/graphics/common/back.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="expression">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>55</y>
+     <width>650</width>
+     <height>225</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Oswald</family>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="placeholderText">
+    <string>Enter expression   ex: 5+4*3  (or) (5-4)*3+4</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="result">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>310</y>
+     <width>650</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Oswald</family>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="placeholderText">
+    <string>Result</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="digits">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>460</y>
+     <width>371</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Light</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

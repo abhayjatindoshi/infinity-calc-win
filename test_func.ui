@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>test_func</class>
+ <widget class="QWidget" name="test_func">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Test Func</string>
+  </property>
+  <widget class="QPushButton" name="back">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>74</width>
+     <height>55</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#back{
+border-image: url(:/graphics/common/back.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="value1">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>55</y>
+     <width>250</width>
+     <height>225</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Oswald</family>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="placeholderText">
+    <string>Enter value1</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="value2">
+   <property name="geometry">
+    <rect>
+     <x>425</x>
+     <y>55</y>
+     <width>250</width>
+     <height>225</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Oswald</family>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="placeholderText">
+    <string>Enter value2</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="result">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>310</y>
+     <width>650</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Oswald</family>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="placeholderText">
+    <string>Result</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="add">
+   <property name="geometry">
+    <rect>
+     <x>295</x>
+     <y>75</y>
+     <width>45</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#add{
+	image: url(:/graphics/test_func/images/add.png);
+	background-color: rgb(41, 132, 242);
+	border:none;
+	border-radius:5px;
+}
+#add:hover{
+	image: url(:/graphics/test_func/images/add_press.png);
+	border: 2px solid rgb(41,132,242);	
+	background-color: rgb(255,255,255);
+
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="subtract">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>75</y>
+     <width>45</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#subtract{
+	image: url(:/graphics/test_func/images/subtract.png);
+	background-color: rgb(41, 132, 242);
+	border:none;
+	border-radius:5px;
+}
+#subtract:hover{
+	image: url(:/graphics/test_func/images/subtract_press.png);
+	border: 2px solid rgb(41,132,242);	
+	background-color: rgb(255,255,255);
+
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="multiply">
+   <property name="geometry">
+    <rect>
+     <x>295</x>
+     <y>140</y>
+     <width>45</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#multiply{
+	image: url(:/graphics/test_func/images/multiply.png);
+	background-color: rgb(41, 132, 242);
+	border:none;
+	border-radius:5px;
+}
+#multiply:hover{
+	image: url(:/graphics/test_func/images/multiply_press.png);
+	border: 2px solid rgb(41,132,242);	
+	background-color: rgb(255,255,255);
+
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="divide">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>140</y>
+     <width>45</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#divide{
+	image: url(:/graphics/test_func/images/divide.png);
+	background-color: rgb(41, 132, 242);
+	border:none;
+	border-radius:5px;
+}
+#divide:hover{
+	image: url(:/graphics/test_func/images/divide_press.png);
+	border: 2px solid rgb(41,132,242);	
+	background-color: rgb(255,255,255);
+
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="mod">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>205</y>
+     <width>45</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#mod{
+	image: url(:/graphics/test_func/images/mod.png);
+	background-color: rgb(41, 132, 242);
+	border:none;
+	border-radius:5px;
+}
+#mod:hover{
+	image: url(:/graphics/test_func/images/mod_press.png);
+	border: 2px solid rgb(41,132,242);	
+	background-color: rgb(255,255,255);
+
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="digits">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>460</y>
+     <width>371</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Light</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>value1</tabstop>
+  <tabstop>value2</tabstop>
+  <tabstop>add</tabstop>
+  <tabstop>subtract</tabstop>
+  <tabstop>multiply</tabstop>
+  <tabstop>divide</tabstop>
+  <tabstop>mod</tabstop>
+  <tabstop>result</tabstop>
+  <tabstop>back</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
