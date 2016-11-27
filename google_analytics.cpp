@@ -87,7 +87,7 @@ void google_analytics::initiate(){
 
     //adds app specific details name, version, id
     query.addQueryItem("an","infinity-calc-app");
-    query.addQueryItem("av","0.9.11306");
+    query.addQueryItem("av","0.9.21139");
     query.addQueryItem("aid","com.encryptorcode.infinitycalc");
 
     //binds all the data in single request

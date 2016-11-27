@@ -1,6 +1,7 @@
 #include "quick_calc.h"
 #include "ui_quick_calc.h"
 #include "dashboard.h"
+#include <chrono>
 #include "sources/INT.h"
 
 quick_calc::quick_calc(QWidget *parent) :
@@ -36,18 +37,26 @@ void quick_calc::on_expression_textChanged()
     //[19-11-2016] checks and parses the expression and returns the solution
     if(INT::check_expression(exp)){
         try{
+            //[27-11-2016] starts the timer
+            auto start = chrono::steady_clock::now();
             solution = solution.fromStdString(INT::parse(exp).to_string());
+            //[27-11-2016] stops the timer
+            auto end = chrono::steady_clock::now();
+            //[27-11-2016] displays the time consumed
+            ui->time->setText("Time: "+QString::number(chrono::duration<double, milli>(end-start).count())+"ms");
             //[25-11-2016] to set the number of digits of output
             ui->digits->setText("No. of digits: "+QString::number(solution[0] == '-' ? solution.length()-1 : solution.length()));
         }catch(exception &e){
             solution = e.what();
-            //[25-11-2016] set blank for digits of invalid output
+            //[25-11-2016] set blank for digits and time of invalid output
             ui->digits->setText("");
+            ui->time->setText("");
         }
     }
     else{
-        //[25-11-2016] set blank for digits of invalid output
+        //[25-11-2016] set blank for digits and time of invalid output
         ui->digits->setText("");
+        ui->time->setText("");
     }
     //[15-11-2016] sets the result box with a string
     ui->result->setText(solution);
