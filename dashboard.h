@@ -27,7 +27,7 @@ private slots:
 
     void on_bugs_feedback_clicked();
 
-    void on_settings_clicked();
+    void on_help_clicked();
 
     void on_about_me_clicked();
 

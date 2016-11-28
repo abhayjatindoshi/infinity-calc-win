@@ -7,6 +7,7 @@
 #include "about_me.h"
 #include <QUrl>
 #include <QDesktopServices>
+#include <QFile>
 #include "google_analytics.h"
 
 dashboard::dashboard(QWidget *parent) :
@@ -64,12 +65,12 @@ void dashboard::on_test_func_clicked()
 
 void dashboard::on_source_code_clicked()
 {
-//    //[21-11-2016] linked with the source code dialog
-//    source_code *ui = new source_code();
-//    this->close();
-//    ui->show();
-//    //[22-11-2016] hits google server with page open ping
-//    ga.hit_page("\\dashboard\\source-code","Source Code");
+    //[21-11-2016] linked with the source code dialog
+    source_code *ui = new source_code();
+    this->close();
+    ui->show();
+    //[22-11-2016] hits google server with page open ping
+    ga.hit_page("\\dashboard\\source-code","Source Code");
 }
 
 void dashboard::on_bugs_feedback_clicked()
@@ -77,18 +78,16 @@ void dashboard::on_bugs_feedback_clicked()
     //[22-11-2016] hits google server with page open ping
     ga.hit_page("\\dashboard\\bugs-feedback","Bugs Feedback");
     //[15-11-2016] opens the link of the feedback form that is stored online
-    QString link = "https://goo.gl/forms/whELGvlB4hei2I3x1";
+    QString link = "https://goo.gl/forms/IHl9ENoCvm2ISoos1";
     QDesktopServices::openUrl(QUrl(link,QUrl::TolerantMode));
 }
 
-void dashboard::on_settings_clicked()
+void dashboard::on_help_clicked()
 {
-//    //[21-11-2016] links to the settings dialog
-//    settings *ui = new settings();
-//    this->close();
-//    ui->show();
-//    //[22-11-2016] hits google server with page open ping
-//    ga.hit_page("\\dashboard\\settings","Settings");
+    //[22-11-2016] hits google server with page open ping
+    ga.hit_page("\\dashboard\\help","Help");
+    //[28-11-2016] opens the PDF documentation
+    QDesktopServices::openUrl(QUrl::fromLocalFile(qApp->applicationDirPath().append("/Documentation.pdf")));
 }
 
 void dashboard::on_about_me_clicked()

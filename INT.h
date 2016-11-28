@@ -83,6 +83,12 @@ private:
 	vector<char> increment(vector<char> number);
 	vector<char> decrement(vector<char> number);
 
+	//used with parse function
+	static bool is_operator(char ch);
+	static bool is_number(char ch);
+	static int priority(char c);
+	static string to_postfix(string infix);
+
 public:
 
 	INT();
@@ -127,7 +133,18 @@ public:
 	INT operator --();
 	INT operator --(int);
 
+	//Exponent operator
+	INT operator ^ (INT num);
+
+	//parses a string expression
+	static INT parse(string exp);
+	//checks expression before parsing
+	static bool check_expression(string exp);
+
 	int length(){return num.size();}
+
+	//[deprecated] used for lattice_multiplication method
+	INT lattice_multiplication(INT num1);
 };
 
 #endif /* INT_H_ */

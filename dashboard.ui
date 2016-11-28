@@ -108,7 +108,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="settings">
+   <widget class="QPushButton" name="help">
     <property name="geometry">
      <rect>
       <x>235</x>
@@ -118,12 +118,12 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">#settings{
+     <string notr="true">#help{
 	border:none;
-	border-image: url(:/graphics/dashboard/images/settings.png);
+	border-image: url(:/graphics/dashboard/images/help.png);
 }
-#settings:hover{
-	border-image: url(:/graphics/dashboard/images/settings_hover.png);
+#help:hover{
+	border-image: url(:/graphics/dashboard/images/help_hover.png);
 }</string>
     </property>
     <property name="text">

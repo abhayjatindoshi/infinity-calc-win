@@ -10,6 +10,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = infinity-calc
 TEMPLATE = app
+VERSION = 1.0.0.2911
 
 
 SOURCES += main.cpp\
@@ -17,25 +18,22 @@ SOURCES += main.cpp\
     quick_calc.cpp \
     test_func.cpp \
     source_code.cpp \
-    settings.cpp \
     about_me.cpp \
-    sources/INT.cpp \
-    google_analytics.cpp
+    google_analytics.cpp \
+    INT.cpp
 
 HEADERS  += dashboard.h \
     quick_calc.h \
     test_func.h \
     source_code.h \
-    settings.h \
     about_me.h \
-    sources/INT.h \
-    google_analytics.h
+    google_analytics.h \
+    INT.h
 
 FORMS    += dashboard.ui \
     quick_calc.ui \
     test_func.ui \
     source_code.ui \
-    settings.ui \
     about_me.ui
 
 RESOURCES += \

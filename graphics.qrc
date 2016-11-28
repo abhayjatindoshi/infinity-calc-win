@@ -9,8 +9,6 @@
         <file>graphics/dashboard/images/bugs_feedback_hover.png</file>
         <file>graphics/dashboard/images/quick_calc.png</file>
         <file>graphics/dashboard/images/quick_calc_hover.png</file>
-        <file>graphics/dashboard/images/settings.png</file>
-        <file>graphics/dashboard/images/settings_hover.png</file>
         <file>graphics/dashboard/images/source_code.png</file>
         <file>graphics/dashboard/images/source_code_hover.png</file>
         <file>graphics/dashboard/images/test_func.png</file>
@@ -34,5 +32,7 @@
         <file>graphics/test_func/images/subtract_press.png</file>
         <file>graphics/common/back.png</file>
         <file>graphics/common/background.png</file>
+        <file>graphics/dashboard/images/help.png</file>
+        <file>graphics/dashboard/images/help_hover.png</file>
     </qresource>
 </RCC>

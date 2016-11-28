@@ -87,13 +87,13 @@ void google_analytics::initiate(){
 
     //adds app specific details name, version, id
     query.addQueryItem("an","infinity-calc-app");
-    query.addQueryItem("av","0.9.21139");
+    query.addQueryItem("av","1.0.2911");
     query.addQueryItem("aid","com.encryptorcode.infinitycalc");
 
     //binds all the data in single request
     QByteArray data;
     data.append(query.query());
-//    nam->post(req,data);
+    nam->post(req,data);
 }
 
 /*
@@ -117,7 +117,7 @@ void google_analytics::terminate(){
     //binds all the data in a single request
     QByteArray data;
     data.append(query.query());
-//    nam->post(req,data);
+    nam->post(req,data);
 }
 
 /*
@@ -150,7 +150,7 @@ void google_analytics::hit_event(QString category, QString action){
     //binds all the event details in a single request
     QByteArray data;
     data.append(query.query());
-//    nam->post(req,data);
+    nam->post(req,data);
 }
 
 /*
@@ -182,5 +182,5 @@ void google_analytics::hit_page(QString path, QString title){
     //binds all the page details in a single request
     QByteArray data;
     data.append(query.query());
-//    nam->post(req,data);
+    nam->post(req,data);
 }

@@ -37,8 +37,8 @@ int main(int argc, char *argv[])
     ga.hit_page("\\dashboard","Dashboard");
 
     //[13-11-2016] Timer for closing splash screen and opening dashboard ui
-    QTimer::singleShot(2000,splash_screen,SLOT(close()));
-    QTimer::singleShot(2000,&dash,SLOT(show()));
+    QTimer::singleShot(2500,splash_screen,SLOT(close()));
+    QTimer::singleShot(2500,&dash,SLOT(show()));
 
     //[23-11-2016] returns exit code on app exit
     int ret=a.exec();

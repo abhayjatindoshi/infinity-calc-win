@@ -1,7 +1,7 @@
 #include "test_func.h"
 #include "ui_test_func.h"
 #include "dashboard.h"
-#include "sources/INT.h"
+#include "INT.h"
 #include <chrono>
 
 test_func::test_func(QWidget *parent) :

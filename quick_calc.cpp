@@ -2,7 +2,7 @@
 #include "ui_quick_calc.h"
 #include "dashboard.h"
 #include <chrono>
-#include "sources/INT.h"
+#include "INT.h"
 
 quick_calc::quick_calc(QWidget *parent) :
     QWidget(parent),
