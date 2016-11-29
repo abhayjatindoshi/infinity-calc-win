@@ -1,8 +1,8 @@
 /*
  * INT.h
- *
  *  Created on: 16-Nov-2016
- *      Author: Abhay
+ *  Last Modified: 29-Nov-2016
+ *  Author: Abhay Jatin Doshi
  */
 
 #ifndef INT_H_
@@ -16,48 +16,12 @@ using namespace std;
 class INT {
 
 private:
-	/*
-	 * [16-11-2016]
-	 * sign -> used to store the sign of the number
-	 * num -> actual place where the numerical data is stored
-	 */
 
+	//used to store the sign of the number
 	char sign;
+	//actul place where the numerical data is stored
 	vector<char> num;
-
-	/*
-	 * [16-11-2016]
-	 * invalid_format exception
-	 * to be thrown when the user input is invalidated to be wrong
-	 */
-	class invalid_format: public exception{
-		virtual const char* what() const throw(){
-			return "Assignment format is inappropriate";
-		}
-	} invalid_format;
-
-	/*
-	 * [18-11-2016]
-	 * zero_divide exception
-	 * to be thrown when dividing by zero occurs
-	 */
-	class zero_divide: public exception{
-		virtual const char* what() const throw(){
-			return "Divisor cannot be zero";
-		}
-	} zero_divide;
-
-	/*
-	 * [26-11-2016]
-	 * limit_exceeded exception
-	 * to be thrown when program may exceeded limit
-	 */
-	class limit_exceeded: public exception{
-		virtual const char* what() const throw(){
-			return "Digits limits reached";
-		}
-	}limit_exceeded;
-
+	
 	//private constructors
 	INT(char sign,vector<char> num);
 
@@ -127,7 +91,8 @@ public:
 	INT operator --();
 	INT operator --(int);
 
-	int length(){return num.size();}
+	//returns the length of the number
+	int length();
 };
 
 #endif /* INT_H_ */

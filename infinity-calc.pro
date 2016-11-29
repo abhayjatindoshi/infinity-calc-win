@@ -10,7 +10,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = infinity-calc
 TEMPLATE = app
-VERSION = 1.0.0.2911
+VERSION = 1.0.3011
 
 
 SOURCES += main.cpp\

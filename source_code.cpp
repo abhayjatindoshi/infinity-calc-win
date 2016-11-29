@@ -42,11 +42,10 @@ void source_code::on_save_clicked()
     //[22-11-2016] hits the google with event
     ga.hit_event("Source Code","Save");
     // [15-11-2016] when source button is clicked the save dialog box appears
-    QString path = QFileDialog::getSaveFileName(this,"Location to save INT.h",
-                                                QDir::homePath()+"/Desktop/INT.h",
-                                                "C++ header file (*.H) ;;Text file (*.txt) ;; All Files (*.*)");
+    QDir d = QFileDialog::getExistingDirectory(this,"Select folder to save",
+                                                QDir::homePath()+"/Desktop/",
+                                                QFileDialog::ShowDirsOnly);
     // [15-11-2016] the source file is copied to the path retireved from save dialog box
-    QDir d = QFileInfo(path).absoluteDir();
     QFile::copy(":/sources/INT.h",d.absolutePath()+"/INT.h");
     QFile::copy(":/sources/INT.cpp",d.absolutePath()+"/INT.cpp");
 }
